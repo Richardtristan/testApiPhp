@@ -1,0 +1,17 @@
+{
+    "name": "vendor/apiphp",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "richard",
+            "email": "richard.tristan.93@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-curl": "*"
+    }
+}
