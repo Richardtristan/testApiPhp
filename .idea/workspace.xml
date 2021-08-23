@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="" />
+    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +25,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
@@ -84,6 +90,8 @@
       <workItem from="1629459856838" duration="671000" />
       <workItem from="1629460832452" duration="6362000" />
       <workItem from="1629533459124" duration="26962000" />
+      <workItem from="1629748018109" duration="178000" />
+      <workItem from="1629748215887" duration="3527000" />
     </task>
     <servers />
   </component>
