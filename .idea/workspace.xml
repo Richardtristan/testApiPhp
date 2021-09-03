@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/testApiPhp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/PokemonListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/PokeApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetCard/Card.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +26,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="dc589ba2-5936-44ed-817e-8f5e37787e74" />
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="5f85b012-8cc6-48f9-8d83-a878f9ce8024" />
     </execution>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -27,7 +37,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev-main-last" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
@@ -56,7 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\apiphp\src" />
+      <recent name="C:\Users\tristan\git\testApiPhp\public\assets\js" />
+      <recent name="C:\Users\tristan\git\testApiPhp\public" />
+      <recent name="C:\Users\tristan\git\testApiPhp\public\assets\img" />
+      <recent name="C:\Users\tristan\git\testApiPhp\src\model" />
+      <recent name="C:\Users\tristan\git\testApiPhp\src" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.SetTest.test_all_returns_all_sets">
@@ -70,6 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SetTest.test_all_returns_all_sets" />
+        <item itemvalue="PHPUnit.CardTest.test_find_returns_card" />
         <item itemvalue="PHPUnit.SetTest.test_all_returns_all_sets" />
         <item itemvalue="PHPUnit.CardTest.test_find_returns_card" />
       </list>
@@ -92,10 +121,26 @@
       <workItem from="1629533459124" duration="26962000" />
       <workItem from="1629748018109" duration="178000" />
       <workItem from="1629748215887" duration="4217000" />
+      <workItem from="1630592592367" duration="2888000" />
+      <workItem from="1630595526220" duration="2236000" />
+      <workItem from="1630654818326" duration="12000" />
+      <workItem from="1630655666595" duration="9268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
