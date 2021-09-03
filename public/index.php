@@ -1,35 +1,47 @@
 <?php
-/*$pokemon = 'bulbasaur';
-
-$api = file_get_contents("https://pokeapi.co/api/v2/pokemon/$pokemon/");
-$json = json_decode($api);
-
-
-echo '<h2>Talent</h2>';
-foreach($json->abilities as $k => $v) {
-    echo $v->ability->name.'<br>';
-}
-
-echo '<h2>Type</h2>';
-echo $json->types[0]->type->name;
-
-echo '<h2>IMG</h2>';
-echo '<img src="'.$json->sprites->back_default.'" width="200">';
-echo '<img src="'.$json->sprites->front_default.'" width="200">';*/
-
 require '../vendor/autoload.php';
-use App\model\PokeApi;
+require_once("router.php");
+use App\Model\Connect;
+use App\Model\WelcomeList;
 
-$api = new PokeApi();
-
-$api->pokemon('151');
-$pokemons = $api->callApi();
-
-
-    echo '<img src="'.$pokemons->sprites->back_default.'" width="200">';
-    echo '<img src="'.$pokemons->sprites->front_default.'" width="200">';
+$connection = new Connect('127.0.0.1', 'cogip', 'root', '');
+$db = $connection->getPdo();
 
 
+// ##################################################
+// ##################################################
+// ##################################################
+
+// Static GET
+// In the URL -> http://localhost
+// The output -> Index
+
+get('/', "../src/view/login.php");
 
 
 
+post('/delete_company/id/$id', "../src/Controller/DeleteCompanyController.php");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ##################################################
+// ##################################################
+// ##################################################
+// any can be used for GETs or POSTs
+
+// For GET or POST
+// The 404.php which is inside the views folder will be called
+// The 404.php has access to $_GET and $_POST
+any('/404','../src/View/404.php');

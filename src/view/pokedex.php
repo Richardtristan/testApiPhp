@@ -10,3 +10,16 @@ require 'header.php';
 </table>
 <?php
 require 'footer.php';
+
+require '../vendor/autoload.php';
+use App\model\PokeApi;
+
+$api = new PokeApi();
+
+$api->pokemon('151');
+$pokemons = $api->callApi();
+
+
+echo '<img src="'.$pokemons->sprites->back_default.'" width="200">';
+echo '<img src="'.$pokemons->sprites->front_default.'" width="200">';
+
