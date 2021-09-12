@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pokedex.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pokedex.php" afterDir="false" />
-    </list>
+    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +13,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="5f85b012-8cc6-48f9-8d83-a878f9ce8024" />
+      <phar pharPath="$PROJECT_DIR$/composer.phar" />
     </execution>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -51,25 +43,30 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/mtgsdk/mtgsdk" />
+      <path value="$PROJECT_DIR$/vendor/awps/font-awesome-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wzD8ILmzTD1QsfBRfyAe6xAfwa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP-challenge-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -79,11 +76,11 @@
       <recent name="C:\Users\tristan\git\testApiPhp\public\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\testApiPhp" />
       <recent name="C:\Users\tristan\git\testApiPhp\public\assets\img" />
       <recent name="C:\Users\tristan\git\testApiPhp\public\assets" />
       <recent name="C:\Users\tristan\git\testApiPhp\public" />
       <recent name="C:\Users\tristan\git\testApiPhp\public\css" />
-      <recent name="C:\Users\tristan\git\testApiPhp\public\assets\js" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.SetTest.test_all_returns_all_sets">
@@ -125,6 +122,10 @@
       <workItem from="1630595526220" duration="2236000" />
       <workItem from="1630654818326" duration="12000" />
       <workItem from="1630655666595" duration="17601000" />
+      <workItem from="1631198226369" duration="2120000" />
+      <workItem from="1631203532194" duration="21000" />
+      <workItem from="1631203555248" duration="8696000" />
+      <workItem from="1631214017415" duration="1088000" />
     </task>
     <servers />
   </component>
@@ -142,5 +143,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

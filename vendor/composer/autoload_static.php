@@ -9,11 +9,16 @@ class ComposerStaticInit0e779773c2113d7d4de31dba5dcd8397
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
+            'Awps\\' => 5,
             'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Awps\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/awps/font-awesome-php/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

@@ -13,6 +13,7 @@
     ],
     "require": {
       "ext-curl": "*",
-      "ext-json": "*"
+      "ext-json": "*",
+        "awps/font-awesome-php": "^4.7"
     }
 }

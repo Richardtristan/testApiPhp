@@ -1,10 +1,13 @@
 <?php
-require '../vendor/autoload.php';
-require_once("router.php");
-use App\Model\Connect;
-use App\Model\WelcomeList;
 
-$connection = new Connect('127.0.0.1', 'cogip', 'root', '');
+require_once('../vendor/autoload.php');
+require_once("router.php");
+session_start();
+
+use App\model\Connect;
+
+
+$connection = new Connect('127.0.0.1', 'pkm', 'root', '');
 $db = $connection->getPdo();
 
 
@@ -16,7 +19,14 @@ $db = $connection->getPdo();
 // In the URL -> http://localhost
 // The output -> Index
 
-get('/', "../src/view/login.php");
+get('/', "/../src/controller/loginController.php");
+get('/login', "/../src/controller/loginController.php");
+post('/login', "/../src/controller/loginController.php");
+get('/register', "/../src/controller/registerController.php");
+post('/register', "/../src/controller/registerController.php");
+get('/lucky', "/../src/view/lucky.php");
+get('/pokedex', "/../src/controller/PokemonListController.php");
+get('/logout', "/../src/controller/logoutController.php");
 
 
 
@@ -43,5 +53,4 @@ post('/delete_company/id/$id', "../src/Controller/DeleteCompanyController.php");
 
 // For GET or POST
 // The 404.php which is inside the views folder will be called
-// The 404.php has access to $_GET and $_POST
-any('/404','../src/View/404.php');
+// The 404.php has access to $_GET and $_POST any('/404','../src/View/404.php');
