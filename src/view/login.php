@@ -49,7 +49,7 @@
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-primary d-block w-100" type="submit">Log In</button>
-                            <a class=" pt-2 not-already" href="/login">You don't have an account? Create here.</a></div>
+                            <a class=" pt-2 not-already" href="/register">You don't have an account? Create here.</a></div>
                     </form>
                 </section>
             </div>

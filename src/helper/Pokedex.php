@@ -23,7 +23,7 @@ class Pokedex{
     }
     function setPokemins($pokemons)
     {
-        $poke = $this->db->prepare("UPDATE pokedex set pokemon=? WHERE id = ?");
+        $poke = $this->db->prepare("UPDATE pokedex set pokemons=? WHERE id = ?");
         $poke->execute([$pokemons, $this->id]);
         return $poke->fetch();
     }
