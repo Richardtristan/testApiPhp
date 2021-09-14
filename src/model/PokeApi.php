@@ -7,12 +7,16 @@ class PokeApi
     public function __construct()
     {
         $this->baseUrl = 'https://pokeapi.co/api/v2/';
-        $this->url;
+        $this->url ='';
     }
 
     function pokemon($lookUp)
     {
     $this->url = $this->baseUrl . 'pokemon/' . $lookUp;
+    }
+    function type()
+    {
+        $this->url = $this->baseUrl . 'type/';
     }
 
     function getPokemon(){

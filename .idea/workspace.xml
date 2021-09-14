@@ -60,13 +60,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -127,7 +127,10 @@
       <workItem from="1631198226369" duration="2120000" />
       <workItem from="1631203532194" duration="21000" />
       <workItem from="1631203555248" duration="8696000" />
-      <workItem from="1631214017415" duration="46147000" />
+      <workItem from="1631214017415" duration="46346000" />
+      <workItem from="1631613176524" duration="47000" />
+      <workItem from="1631620526509" duration="173000" />
+      <workItem from="1631620702386" duration="10322000" />
     </task>
     <servers />
   </component>

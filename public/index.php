@@ -1,7 +1,8 @@
 <?php
-
+require __DIR__. '/../src/view/header.php';
 require_once('../vendor/autoload.php');
 require_once("router.php");
+
 session_start();
 
 use App\model\Connect;

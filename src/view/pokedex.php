@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="icon" type="image/png" sizes="1300x1300" href="/../../public/assets/img/avatar.png">
-    <link rel="stylesheet" href="/../../public/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
-    <script src="https://kit.fontawesome.com/767e5fc4a3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/../../public/assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="/../../public/assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="/../../public/assets/css/Registration-Form-with-Photo.css">
-</head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
@@ -32,44 +17,45 @@
                 <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
                 <li class="nav-item"></li>
                 <li class="nav-item mx-0 mx-lg-1"></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pokedex">My
-                        pokedex</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pokedex">My pokedex</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <section id="pokedex" style="width: 100%; height: auto; background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
-<div class="container" style="padding-top: 5%" >
-    <div class="row g-2 mx-auto p-4 w-100 " style="width: 100%">
-        <?php foreach ($myPokemons as $data){
-        $api->pokemon($data);
-        $pokemon = $api->callApi(); ?>
-        <div class="col-4">
-        <div class="card " style="margin-left: auto; margin-right: auto;">
-            <div class="text-center ">Number: <?php echo $pokemon->id ?></div>
-            <div class="row">
-                <img style="padding-right: 0" class="card-text col-6" src="<?php echo $pokemon->sprites->front_shiny ?>" alt="Card image cap"/>
+<h2 class="text-uppercase text-center text-secondary mb-0" style="padding: 0px;margin: 40px;"><br><strong>My pokedex</strong><br><br></h2>
 
-                <div class="card-text col-6 " style="padding-left: 0; padding-top: 20%"><?php echo $pokemon->name ?></div>
-            </div>
-            <div class=" row justify-content-around">
-                <?php foreach ($pokemon->types as $type) { ?>
+    <div class="container" style="padding-top: 5%" >
+        <div class="row g-2 mx-auto p-4 w-100 " style="width: 100%">
+            <?php foreach ($myPokemons as $data){
+                $api->pokemon($data);
+                $pokemon = $api->callApi(); ?>
+                <div class="col-4">
+                    <div class="card " style="margin-left: auto; margin-right: auto;">
+                        <div class="text-center ">Number: <?php echo $pokemon->id ?></div>
+                        <div class="row">
+                            <img id="img-<?php echo $pokemon->id ?>" style="padding-right: 0" class="card-text col-6 jsHover" src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image pokemon" data-shiny="<?php echo $pokemon->sprites->front_shiny ?>" data-default="<?php echo $pokemon->sprites->front_default ?>"/>
 
-                    <div class="card-text col-auto"><?php echo $type->type->name ?></div>
-                <?php } ?>
-            </div>
-            <hr style=" width: 80%; background-color: black">
-            <div class=" row justify-content-around">
-                <?php foreach ($pokemon->abilities as $ability) { ?>
+                            <div class="card-text col-6 " style="padding-left: 0; padding-top: 20%"><?php echo $pokemon->name ?></div>
+                        </div>
+                        <div class=" row justify-content-around">
+                            <?php foreach ($pokemon->types as $type) { ?>
 
-                    <div class="card-text col-auto pb-2"><?php echo $ability->ability->name ?></div>
-                <?php }?>
+                                <div class="card-text col-auto <?php colortype($api);?>"><?php echo $type->type->name ?></div>
+                            <?php } ?>
+                        </div>
+                        <hr style=" width: 80%; background-color: black">
+                        <div class=" row justify-content-around">
+                            <?php foreach ($pokemon->abilities as $ability) { ?>
 
-            </div>
+                                <div class="card-text col-auto pb-2"><?php echo $ability->ability->name ?></div>
+                            <?php }?>
+
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
-        </div>
-        <?php } ?>
-    </div>
     </div>
 </section>
 <footer class="text-center footer">
@@ -78,7 +64,7 @@
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
                         class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/Richardtristan target="_blank""><i
-                            class="fab fa-github"></i></a>
+                        class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
