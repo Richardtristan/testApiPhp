@@ -48,7 +48,7 @@
         <div class="card " style="margin-left: auto; margin-right: auto;">
             <div class="text-center ">Number: <?php echo $pokemon->id ?></div>
             <div class="row">
-                <img style="padding-right: 0" class="card-text col-6" src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image cap"/>
+                <img style="padding-right: 0" class="card-text col-6" src="<?php echo $pokemon->sprites->front_shiny ?>" alt="Card image cap"/>
 
                 <div class="card-text col-6 " style="padding-left: 0; padding-top: 20%"><?php echo $pokemon->name ?></div>
             </div>
@@ -88,6 +88,7 @@
 </div>
 <script src="/../../public/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/../../public/assets/js/freelancer.js"></script>
+<script src="/../../public/assets/js/main.js"></script>
 </body>
 
 </html>
