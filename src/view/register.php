@@ -17,7 +17,7 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-    <div class="container"><a class="navbar-brand" href="#page-top">phpapi</a>
+    <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
-                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i
+                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/Richardtristan" target="_blank"><i
                             class="fab fa-github"></i></a>
             </div>
         </div>
@@ -147,166 +147,6 @@
 <div class="text-center text-white copyright py-4">
     <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
 </div>
-<div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white"
-                                                               href="#page-top"><i class="fa fa-chevron-up"></i></a>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/cabin.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/cake.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/circus.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/game.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/safe.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                            <hr class="star-dark mb-5">
-                            <img class="img-fluid mb-5" src="/../../public/assets/img/portfolio/submarine.png">
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
-                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5"><a
-                        class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
-                        data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-        </div>
-    </div>
-</div>
-
 <script src="/../../public/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/../../public/assets/js/freelancer.js"></script>
 <script src="/../../public/assets/js/main.js"></script>

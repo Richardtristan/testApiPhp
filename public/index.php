@@ -7,7 +7,7 @@ session_start();
 use App\model\Connect;
 
 
-$connection = new Connect('127.0.0.1', 'pkm', 'root', '');
+$connection = new Connect('localhost', 'pkm', 'root', '');
 $db = $connection->getPdo();
 
 

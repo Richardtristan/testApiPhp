@@ -21,5 +21,6 @@ require __DIR__ . '/../view/register.php';
 if ($issetVar) {
     if ($user != null && !$user->emailExist() && !$user->UsernameExist()) {
         $user->createUser();
+        header('location: /login');
     }
 }

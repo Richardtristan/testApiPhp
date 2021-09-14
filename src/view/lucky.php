@@ -17,38 +17,34 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-    <div class="container"><a class="navbar-brand" href="#page-top">phpapi</a>
+    <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
                     class="fa fa-bars"></i></button>
-        <a class="py-3 px-0 px-lg-3 rounded" href="#">
+        <a class="py-3 px-0 px-lg-3 rounded" href="/logout">
             <button class="btn btn-danger" type="button">Logout</button>
         </a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                                     href="#portfolio">home</a></li>
-                <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Lucky chest</a></li>
+                                                     href="/login">home</a></li>
+                <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
                 <li class="nav-item"></li>
                 <li class="nav-item mx-0 mx-lg-1"></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#pokedex">My
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pokedex">My
                         pokedex</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<section id="contact"
-         style="width: 100%; height: auto; background: ur/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
+<section id="lucky"
+         style=" padding-top: 15%; width: 100%; height: auto; background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
     <div class="container">
-        <section class="contact-clean" style="background: rgba(241,247,252,0);">
-            <h1 class="text-center text-light">Try to catch 1 pokemon every 2 hours</h1>
-            <form method="post"
-                  style="background: rgba(255,255,255,0);border-style: none;border-color: rgba(80,94,108,0)">
-                <input data-toggle="tooltip" data-placement="top" title="Click on me" type="image"
-                       src="/../../public/assets/img/pokeball.png" alt="Submit" width="100%" height="100%">
+            <h1  class="text-center text-dark bg-light rounded">Try to catch 1 pokemon every 2 hours</h1>
+            <form class="w-50 h-50"  method="post" style="padding-top: 5%;  display: block; margin-left: auto; margin-right: auto; ">
+                <input data-toggle="tooltip" data-placement="top" title="Click on me" type="image" src="/../../public/assets/img/pokeball.png" alt="Submit" width="100%" height="100%"">
             </form>
-        </section>
     </div>
 </section>
 <footer class="text-center footer">
@@ -56,7 +52,7 @@
         <div class="row">
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
-                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i
+                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/Richardtristan" target="_blank"><i
                             class="fab fa-github"></i></a>
             </div>
         </div>
