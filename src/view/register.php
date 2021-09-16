@@ -9,8 +9,7 @@
                     class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                                     href="https://github.com/Richardtristan" target="_blank">Contact</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://github.com/Richardtristan" target="_blank">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -74,7 +73,7 @@
                                             <a class="already" href="/login">You already have an account? Login here.</a>
                                             <?php
                                                 if ($user != null && !$user->emailExist() && !$user->UsernameExist()) {
-                                                    echo '<div id="myModal" style="display: block" class="modal is-valid" tabindex="-1">
+                                                    echo '<div style="display: block" class="myModal modal is-valid" tabindex="-1">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -85,6 +84,7 @@
                                                         <p>You have registered</p>
                                                     </div>
                                                     <div class="modal-footer">
+                                                    <a  class="btn btn-primary" href="/login">Log In</a>
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>

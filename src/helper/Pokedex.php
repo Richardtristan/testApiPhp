@@ -21,10 +21,20 @@ class Pokedex{
         $poke->execute([$this->id]);
         return $poke->fetch();
     }
-    function setPokemins($pokemons)
+    function setPokemons($actualPokedex, $pokemons)
     {
         $poke = $this->db->prepare("UPDATE pokedex set pokemons=? WHERE id = ?");
-        $poke->execute([$pokemons, $this->id]);
-        return $poke->fetch();
+        $poke->execute([$actualPokedex.$pokemons, $this->id]);
+    }
+    function getDate()
+    {
+        $date = $this->db->prepare("SELECT date FROM pokedex WHERE id = ?");
+        $date->execute([ $this->id]);
+        return $date->fetch();
+    }
+    function setDate($dateNow)
+    {
+        $date = $this->db->prepare("UPDATE pokedex set date=? WHERE id = ?");
+        $date->execute([$dateNow, $this->id]);
     }
 }

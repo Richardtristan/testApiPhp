@@ -23,7 +23,7 @@ document.addEventListener("mouseover", (e) => {
     }
 })
 
-let modal = document.getElementById("myModal")
+let modal = document.getElementsByClassName("myModal")[0]
 if (modal !== null) {
     modal.onclick = function () {
         modal.style.display = "none";

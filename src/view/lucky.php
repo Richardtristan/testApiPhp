@@ -19,9 +19,12 @@
     <div class="container">
             <h1  class="text-center text-dark bg-light rounded">Try to catch 1 pokemon every 2 hours</h1>
             <form class="w-50 h-50"  method="post" style="padding-top: 5%;  display: block; margin-left: auto; margin-right: auto; ">
-                <button name="pokemon" type="submit"><img style="border-radius: 50% !important;" src="/../../public/assets/img/pokeball.png"></button>
+                <input name="pokemon" data-toggle="tooltip" data-placement="top" title="Click on me" type="image" src="/public/assets/img/pokeball.png" alt="Submit" width="100%" height="100%">
             </form>
     </div>
+    <?php if ($issetVar && $date < $dateNow){
+        echo '';
+    }?>
 </section>
 <footer class="text-center footer">
     <div class="container">

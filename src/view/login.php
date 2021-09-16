@@ -1,5 +1,3 @@
-
-
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
@@ -10,7 +8,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                                     href="https://github.com/Richardtristan" target="_blank">Contact</a></li>
+                                                     href="https://github.com/Richardtristan"
+                                                     target="_blank">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -33,8 +32,30 @@
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-primary d-block text-black w-100" type="submit">Log In</button>
-                            <a class=" pt-2 not-already" href="/register">You don't have an account? Create here.</a></div>
+                            <a class=" pt-2 not-already" href="/register">You don't have an account? Create here.</a>
+                        </div>
                     </form>
+                    <?php if (isset($login)) {
+                        if (!$login->login()) {
+                            echo '<div id="modalLogin" style="display: block" class="myModal modal is-valid" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Bad</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Bad password or username</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <a  class="btn btn-primary" href="/login">Log In</a>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>';
+                        }
+                    } ?>
                 </section>
             </div>
         </div>
@@ -45,7 +66,8 @@
         <div class="row">
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
-                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/Richardtristan" target="_blank"><i
+                        class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
+                        href="https://github.com/Richardtristan" target="_blank"><i
                             class="fab fa-github"></i></a>
             </div>
         </div>
@@ -60,6 +82,8 @@
 
 <script src="/../../public/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/../../public/assets/js/freelancer.js"></script>
+<script src="/../../public/assets/js/main.js"></script>
 </body>
+
 
 </html>

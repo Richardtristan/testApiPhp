@@ -23,8 +23,6 @@ if ($issetVar && !$isemptyUsername && $filterPassword && $filterUsername) {
         $_SESSION['email'] = $login->email($_SESSION['idUser']);
         //$_SESSION['pokedex'] = $login->pokedexID($_SESSION['idUser']);
         header('location: /pokedex');
-    } else {?>
-        <script> alert('password or username is not valid')</script><?php
     }
 }
 

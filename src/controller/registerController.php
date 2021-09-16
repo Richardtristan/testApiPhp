@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_SESSION['idUser'])) {
-    header('location: /pokedex');
+    header('Location: /pokedex');
 }
 use App\helper\User;
 
@@ -21,6 +21,6 @@ require __DIR__ . '/../view/register.php';
 if ($issetVar) {
     if ($user != null && !$user->emailExist() && !$user->UsernameExist()) {
         $user->createUser();
-        header('location: /login');
+
     }
 }

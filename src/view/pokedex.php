@@ -18,7 +18,8 @@
 <section id="pokedex" style="width: 100%; height: auto; background-color: #FE5858">
 <h2 class="text-uppercase text-center text-white mb-0" style="padding: 0px;margin: 40px;"><br><strong>My pokedex</strong><br><br></h2>
     <div class="container" style="padding-top: 5%" >
-            <?php if ($myPokemons[0] !== "") { ?>
+
+            <?php if  ($myPokemons  != []) { var_dump($myPokemons); ?>
                 <div class="row g-2 mx-auto p-12 w-100 " style="width: 100%">
 
                 <?php foreach ($myPokemons as $data){
@@ -53,12 +54,12 @@
             <?php }
                 }
             else {?>
-                <div class="card" style="margin-left: auto; margin-right: auto;">
+                <div class="card text-center" style="margin-left: auto; margin-right: auto;">
                   <img class="card-img-top" src="/../../public/assets/img/pikachu-pleure.gif"  style="width: 25%; height: auto; margin-left: auto; margin-right: auto !important;" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title text-center">Pokedex vide </h5>
                     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary ">Go somewhere</a>
+                    <a href="#" class=" btn btn-primary text-center">Go somewhere</a>
                   </div>
                 </div>
         </div>
