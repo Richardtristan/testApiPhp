@@ -1,26 +1,32 @@
-const arrayImg = document.querySelectorAll(".jsHover");
+const arrayImg = document.querySelectorAll(".imgHover");
+
+function useRegex(input) {
+    let regex = /card-[0-9]+/i;
+    return regex.test(input);
+}
 
 document.addEventListener("mouseover", (e) => {
 //console.log(arrayImg);
     let target = e.target;
-    let className = target.className;
-    let arraySplitClassName = className.split(' ');
-    //console.log(arraySplitClassName);
-
-    if (arraySplitClassName[2] === "jsHover" ) {
-        target.src = target.dataset.shiny;
-    } else {
+    if (useRegex(target.id)) {
+        let pokemonId = target.id.split('card-');
+        arrayImg.forEach(elem => {
+            let imagePkmId = elem.id.split('img-');
+            if (imagePkmId[1] === pokemonId[1]){
+                elem.src = elem.dataset.shiny;
+            }
+        })
+    }else if (target.id === 'pokedex'){
         arrayImg.forEach(elem => {
             elem.src = elem.dataset.default;
         })
     }
-
-
 })
 
-// let modal = document.getElementById("myModal")
-// modal.onclick = function () {
-//     modal.style.display = "none";
-// }
-
+let modal = document.getElementById("myModal")
+if (modal !== null) {
+    modal.onclick = function () {
+        modal.style.display = "none";
+    }
+}
 

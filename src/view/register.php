@@ -15,10 +15,8 @@
         </div>
     </div>
 </nav>
-<section id="contact"
-         style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
-    <h2 class="text-uppercase text-center text-secondary mb-0" style="padding: 0px;margin: 40px;"><br><strong>CREATE&nbsp;AN
-            ACCOUNT.</strong><br><br></h2>
+<section id="register" style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
+    <h2 class="text-uppercase text-center text-white mb-0" style="padding: 0px;margin: 40px;"><br><strong>CREATE AN ACCOUNT.</strong><br><br></h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -26,17 +24,11 @@
                     <div class="control-group"></div>
                     <div class="control-group">
                         <div class="mb-0 form-floating controls pb-2">
-                            <div></div>
-                            <small class="form-text text-danger help-block"></small>
-                            <div></div>
-                            <section>
                                 <section class="register-photo" style="background: rgba(241,247,252,0);">
                                     <div class="form-container">
-                                        <form id="myForm" method="post" style="background: rgba(255,255,255,0);">
+
                                             <h2 class="text-center text-secondary text-uppercase"></h2>
-                                            <div class="mb-3"><input class="form-control" type="tex" name="username"
-                                                                     placeholder="Username"
-                                                                     style="background: rgb(255,236,236);"></div>
+                                            <div class="mb-3"><input class="form-control" type="text" name="username" placeholder="Username" style="background: rgb(255,236,236);"></div>
                                             <?php
                                             if ($user != null && $user->UsernameExist()) {
                                                     echo '<p>This username exist</p>';
@@ -46,9 +38,7 @@
                                                     echo "<p>This value is needed</p>";
                                                 }
                                              ?>
-                                            <div class="mb-3"><input class="form-control" type="email" name="email"
-                                                                     placeholder="Email"
-                                                                     style="background: rgb(255,236,236);"></div>
+                                            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" style="background: rgb(255,236,236);"></div>
                                             <?php
                                                 if ($user != null && $user->emailExist()) {
 
@@ -103,10 +93,8 @@
                                                 }
 
                                             ?>
-                                        </form>
                                     </div>
                                 </section>
-                            </section>
                         </div>
                     </div>
                     <div class="control-group"></div>

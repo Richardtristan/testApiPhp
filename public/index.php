@@ -25,13 +25,14 @@ get('/login', "/../src/controller/loginController.php");
 post('/login', "/../src/controller/loginController.php");
 get('/register', "/../src/controller/registerController.php");
 post('/register', "/../src/controller/registerController.php");
-get('/lucky', "/../src/view/lucky.php");
-get('/pokedex', "/../src/controller/PokemonListController.php");
+get('/lucky', "/../src/controller/luckyController.php");
+post('/lucky', "/../src/controller/luckyController.php");
+get('/pokedex', "/../src/controller/pokemonListController.php");
 get('/logout', "/../src/controller/logoutController.php");
 
 
 
-post('/delete_company/id/$id', "../src/Controller/DeleteCompanyController.php");
+
 
 
 

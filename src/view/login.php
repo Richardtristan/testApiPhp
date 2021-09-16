@@ -15,9 +15,9 @@
         </div>
     </div>
 </nav>
-<section id="contact"
+<section id="login"
          style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
-    <h2 class="text-uppercase text-center text-secondary pt-3" style="padding: 0px;margin: 40px;">Login</h2>
+    <h2 class="text-uppercase text-center text-white pt-3" style="padding: 0px;margin: 40px;">Login</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -32,7 +32,7 @@
                                                  style="background: rgb(255,236,236);border-color: rgb(255,236,236);">
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-primary d-block w-100" type="submit">Log In</button>
+                            <button class="btn btn-primary d-block text-black w-100" type="submit">Log In</button>
                             <a class=" pt-2 not-already" href="/register">You don't have an account? Create here.</a></div>
                     </form>
                 </section>
