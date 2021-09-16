@@ -75,6 +75,7 @@
 </footer>
 <div class="text-center text-white copyright py-4">
     <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
+    <div style="font-size: 8px" class="container"><small>Vos données personnelles sont conservées pour une durée maximale de 3 ans. En application de la loi Informatique et Libertés du 6 janvier 1978 modifiée par la loi du 9 août 2004 et du Règlement Général sur la Protection des Données, entrée en vigueur le 25 mai 2018, vous disposez d’un droit d’accès, de rectification, de modification et de suppression concernant les données qui vous concernent. Vous pouvez contacter le responsable pour exercer ce droit : [adresse e-mail du responsable des données]. Nous mettons tout en oeuvre pour protéger vos données personnelles et empêcher leur diffusion. Néanmoins, si un piratage venait à entraîner une fuite de données, le responsable des données s’engage à prévenir toutes personnes victime d’une violation de ses données à caractère personnel. Parallèlement, une notification documentée de cette violation sera également adressée à la CNIL dans un délai maximum de 72 heures après sa découverte.</div></small>
 </div>
 <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white"
                                                                href="#page-top"><i class="fa fa-chevron-up"></i></a>

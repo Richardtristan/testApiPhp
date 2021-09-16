@@ -12,12 +12,12 @@ $pokedex = new Pokedex($_SESSION['idUser']);
 
 $decode = $pokedex->getPokemons();
 if ($decode != "" ){
-
     $myPkm = explode(',',$decode[0]);
     $myPokemons = array_unique($myPkm);
     sort($myPokemons);
     unset($myPokemons[0]);
-    $api = new PokeApi;
+    $list = new PokeApi;
+    $story = new PokeApi;
 }
 
 

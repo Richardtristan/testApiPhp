@@ -10,6 +10,10 @@ class PokeApi
         $this->url ='';
     }
 
+    function pokemonSpecies($lookup){
+        $this->url = $this->baseUrl . 'pokemon-species/' . $lookup;
+    }
+
     function pokemon($lookUp)
     {
     $this->url = $this->baseUrl . 'pokemon/' . $lookUp;

@@ -19,40 +19,45 @@
 <h2 class="text-uppercase text-center text-white mb-0" style="padding: 0px;margin: 40px;"><br><strong>My pokedex</strong><br><br></h2>
     <div class="container" style="padding-top: 5%" >
 
-            <?php if  ($myPokemons  != []) { var_dump($myPokemons); ?>
-                <div class="row g-2 mx-auto p-12 w-100 " style="width: 100%">
-
-                <?php foreach ($myPokemons as $data){
-                $api->pokemon($data);
-                $pokemon = $api->callApi();
+            <?php  if  ($myPokemons  != []) {
                 ?>
-                <div class="col-4">
+                <div class="row g-2 mx-auto p-12 w-100" style="width: 100%">
+                <?php foreach ($myPokemons as $data){
+                    $list->pokemon($data);
+                    $pokemon = $list->callApi();
+                    $story->pokemonSpecies($data);
+                    $stories = $story->callApi();
 
-                    <div id="card-<?php echo $pokemon->id?>" class="card bg-secondary" style="margin-left: auto; margin-right: auto;">
-                        <div class="text-center text-white">Number: <?php echo $pokemon->id ?></div>
-                        <div class="row">
-                            <img id="img-<?php echo $pokemon->id?>" style="padding-right: 0" class="card-text col-6 imgHover" src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image pokemon" data-shiny="<?php echo $pokemon->sprites->front_shiny ?>" data-default="<?php echo $pokemon->sprites->front_default ?>"/>
+                    $phrase = preg_replace('/\f/', ' ', $stories->flavor_text_entries[0]->flavor_text);
+//                    echo '<pre>';
+//                    var_dump($stories->flavor_text_entries[0]->flavor_text);
+//                    echo '</pre>';
+                ?><div  class="col-4 card-<?php echo $pokemon->id?>">
+                        <div class="card bg-secondary card-<?php echo $pokemon->id?>" style="margin-left: auto; margin-right: auto;">
+                            <div class="text-center text-white card-<?php echo $pokemon->id?>">Number: <?php echo $pokemon->id ?></div>
+                            <div class="row card-<?php echo $pokemon->id?>">
+                                <img id="img-<?php echo $pokemon->id?>" style="padding-right: 0" class="imgHover card-text col-6 card-<?php echo $pokemon->id?>" src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image pokemon" data-shiny="<?php echo $pokemon->sprites->front_shiny ?>" data-default="<?php echo $pokemon->sprites->front_default ?>"/>
+                                <div data-name="<?php echo strtoupper($pokemon->name) ?>" data-story="<?php echo $phrase; ?>" id="pokemonName-<?php echo $pokemon->id?>" class="nameHover card-text col-6 text-white card-<?php echo $pokemon->id?>" style="padding-left: 0; padding-top: 20%"><?php echo  strtoupper($pokemon->name)  ?></div>
+                            </div>
+                            <div class=" row justify-content-around card-<?php echo $pokemon->id?>">
+                                <?php foreach ($pokemon->types as $type) { ?>
 
-                            <div class="card-text col-6 text-white" style="padding-left: 0; padding-top: 20%"><?php echo strtoupper($pokemon->name) ?></div>
-                        </div>
-                        <div class=" row justify-content-around">
-                            <?php foreach ($pokemon->types as $type) { ?>
+                                    <div style="<?php colortype($type->type->name);?>margin: 3% !important;" class="card-text col-auto text-white card-<?php echo $pokemon->id?>"><?php echo ucfirst($type->type->name) ?></div>
+                                <?php } ?>
+                            </div>
+                            <hr class="card-<?php echo $pokemon->id?>" style=" width: 80%; background-color: black">
+                            <div class="card-<?php echo $pokemon->id?> row justify-content-around text-white">
+                                <?php foreach ($pokemon->abilities as $ability) { ?>
 
-                                <div style="<?php colortype($type->type->name);?>margin: 3% !important;" class="card-text col-auto text-white"><?php echo ucfirst($type->type->name) ?></div>
-                            <?php } ?>
-                        </div>
-                        <hr style=" width: 80%; background-color: black">
-                        <div class=" row justify-content-around text-white">
-                            <?php foreach ($pokemon->abilities as $ability) { ?>
+                                    <div class="card-<?php echo $pokemon->id?> typoAbility card-text col-auto pb-2"><?php echo ucfirst($ability->ability->name) ?></div>
+                                <?php }?>
 
-                                <div class="typoAbility card-text col-auto pb-2"><?php echo ucfirst($ability->ability->name) ?></div>
-                            <?php }?>
-
+                            </div>
                         </div>
                     </div>
-                </div>
-            <?php }
-                }
+
+                <?php }
+                    }
             else {?>
                 <div class="card text-center" style="margin-left: auto; margin-right: auto;">
                   <img class="card-img-top" src="/../../public/assets/img/pikachu-pleure.gif"  style="width: 25%; height: auto; margin-left: auto; margin-right: auto !important;" alt="Card image cap">
