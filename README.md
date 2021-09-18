@@ -17,7 +17,7 @@
 * use php and mysql for store Data in DB
 * use model MVC 
 * page register in DB and login with the acccounts in DB
-* page pokedex for view all pokemons in my account stored in DB, sort them by ID, font color of the types attributed by pokemon type, card of podemons animated with story of the * * pokemons and image of the shiny version
+* page pokedex for view all pokemons in my account stored in DB, sort them by ID, font color of the types attributed by pokemons type, card of pokemons animated with story of the pokemons and image of the shiny version
 * page lucky for catch 1 pokemon every 2 hours and stored in DB ( the first 151 pokemons is implied)
 
  
