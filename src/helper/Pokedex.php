@@ -17,24 +17,24 @@ class Pokedex{
     }
     function getPokemons()
     {
-        $poke = $this->db->prepare("SELECT pokemons FROM pokedex WHERE id = ?");
+        $poke = $this->db->prepare("SELECT pokemons FROM pokedex WHERE userId = ?");
         $poke->execute([$this->id]);
         return $poke->fetch();
     }
     function setPokemons($actualPokedex, $pokemons)
     {
-        $poke = $this->db->prepare("UPDATE pokedex set pokemons=? WHERE id = ?");
+        $poke = $this->db->prepare("UPDATE pokedex set pokemons=? WHERE userId = ?");
         $poke->execute([$actualPokedex.$pokemons, $this->id]);
     }
     function getDate()
     {
-        $date = $this->db->prepare("SELECT date FROM pokedex WHERE id = ?");
+        $date = $this->db->prepare("SELECT date FROM pokedex WHERE userId = ?");
         $date->execute([ $this->id]);
         return $date->fetch();
     }
     function setDate($dateNow)
     {
-        $date = $this->db->prepare("UPDATE pokedex set date=? WHERE id = ?");
+        $date = $this->db->prepare("UPDATE pokedex set date=? WHERE userId = ?");
         $date->execute([$dateNow, $this->id]);
     }
 }

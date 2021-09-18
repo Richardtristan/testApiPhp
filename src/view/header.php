@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="Site for collect Pokemons">
-    <title>Home - Brand</title>
+    <title>PokeApiPhp - Brand</title>
     <link rel="icon" type="image/png" sizes="1300x1300" href="/../../public/assets/img/avatar.png">
     <link rel="stylesheet" href="/../../public/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">

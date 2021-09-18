@@ -51,8 +51,8 @@ class User
     {
         $user = $this->db->prepare("INSERT INTO accounts(username, email, password) VALUES (?,?,?)");
         $user->execute([$this->username, $this->email, $this->password]);
-        $user = $this->db->prepare("INSERT INTO pokedex(id) VALUES (?)");
-        $user->execute([$this->db->lastInsertId()]);
+        $user = $this->db->prepare("INSERT INTO pokedex(userId, pokemons, date) VALUES (?,?,?)");
+        $user->execute([$this->db->lastInsertId(), '0', '2021-09-15 14:39:45']);
     }
 
 

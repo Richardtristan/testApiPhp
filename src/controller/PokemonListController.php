@@ -20,15 +20,6 @@ if ($decode != "" ){
     $story = new PokeApi;
 }
 
-
-
-
-//$api->type();
-//$types = $api->callApi();
-//echo '<pre>';
-//var_dump($types->results);
-//echo '</pre>';
-
 function colortype($colorType)
 {
 

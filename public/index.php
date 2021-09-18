@@ -1,8 +1,7 @@
 <?php
-require __DIR__. '/../src/view/header.php';
 require_once('../vendor/autoload.php');
 require_once("router.php");
-
+require __DIR__. '/../src/view/header.php';
 session_start();
 
 use App\model\Connect;
@@ -55,4 +54,5 @@ get('/logout', "/../src/controller/logoutController.php");
 
 // For GET or POST
 // The 404.php which is inside the views folder will be called
-// The 404.php has access to $_GET and $_POST any('/404','../src/View/404.php');
+// The 404.php has access to $_GET and $_POST any('/404','../../src/View/404.php');
+any('404', "/../src/view/404.php");
