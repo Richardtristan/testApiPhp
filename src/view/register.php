@@ -1,4 +1,4 @@
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+<body style="height: 100% !important;" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -52,8 +52,8 @@
                                         echo ' <p>This mail exist<p>';
                                     }
 
-                                    if ($filterEmail) echo "<p>This is the right format</p>";
-                                    else echo "<p>This not the right format</p>";
+                                    if ($issetEmail && $filterEmail) echo "<p>This is the right format</p>";
+                                    else if ($issetEmail && !$filterEmail)echo "<p>This not the right format</p>";
                                     if ($isemptyEmail) {
                                         echo "<p>This value is needed</p>";
                                     }
@@ -63,7 +63,7 @@
                                                              name="password" placeholder="Password"
                                                              style="background: rgb(255,236,236);"></div>
                                     <?php if ($isemptyPassword) {
-                                        echo "<p>cette valeur est obligatoire </p>";
+                                        echo "<p>This value is needed</p>";
                                     } ?>
                                     <div class="mb-3">
                                         <div class="form-check"><label class="form-check-label"><input
@@ -71,7 +71,7 @@
                                                         style="/*background: rgb(255,236,236);*/border-style: solid;border-color: rgb(134,142,150);">Click
                                                 here to agree to the license terms.</label></div>
                                         <?php if ($isemptyCheckbox) {
-                                            echo "<p>cette valeur est obligatoire </p>";
+                                            echo "<p>This value is needed</p>";
                                         } ?>
                                     </div>
                                     <div class="mb-3">
@@ -114,8 +114,8 @@
         </div>
     </div>
 </section>
-<footer class="text-center footer">
-    <div class="container">
+<footer style="bottom: 0;width: 100%;" class="text-center footer">
+    <div style="padding-bottom: 5%" class="container ">
         <div class="row">
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
@@ -125,22 +125,20 @@
             </div>
         </div>
     </div>
-</footer>
-<div class="text-center text-white copyright py-4">
-    <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
-    <div style="font-size: 10px; padding: 2%" class="container"><small>Vos données personnelles sont conservées pour une
+
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
+        <div style="font-size: 10px; padding: 2%" class="container">Vos données personnelles sont conservées pour une
             durée maximale de 3 ans. En application de la loi Informatique et Libertés du 6 janvier 1978 modifiée par la
             loi du 9 août 2004 et du Règlement Général sur la Protection des Données, entrée en vigueur le 25 mai 2018,
             vous disposez d’un droit d’accès, de rectification, de modification et de suppression concernant les données
-            qui vous concernent. Vous pouvez contacter le responsable pour exercer ce droit : [adresse e-mail du
-            responsable des données]. Nous mettons tout en oeuvre pour protéger vos données personnelles et empêcher
+            qui vous concernent. Vous pouvez contacter le responsable pour exercer ce droit : richard.tristan.93@gmail.com. Nous mettons tout en oeuvre pour protéger vos données personnelles et empêcher
             leur diffusion. Néanmoins, si un piratage venait à entraîner une fuite de données, le responsable des
             données s’engage à prévenir toutes personnes victime d’une violation de ses données à caractère personnel.
             Parallèlement, une notification documentée de cette violation sera également adressée à la CNIL dans un
             délai maximum de 72 heures après sa découverte.</div>
-    </small>
-
-</div>
+    </div>
+</footer>
 <script src="/../../public/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/../../public/assets/js/freelancer.js"></script>
 <script src="/../../public/assets/js/main.js"></script>

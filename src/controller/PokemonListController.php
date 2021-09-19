@@ -12,6 +12,8 @@ $pokedex = new Pokedex($_SESSION['idUser']);
 
 $decode = $pokedex->getPokemons();
 if ($decode != "" ){
+    $myPkmDouble = explode(',',$decode[0]);
+    $listDouble = array_count_values($myPkmDouble);
     $myPkm = explode(',',$decode[0]);
     $myPokemons = array_unique($myPkm);
     sort($myPokemons);
@@ -19,6 +21,7 @@ if ($decode != "" ){
     $list = new PokeApi;
     $story = new PokeApi;
 }
+
 
 function colortype($colorType)
 {

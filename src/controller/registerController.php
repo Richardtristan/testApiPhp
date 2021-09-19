@@ -9,6 +9,7 @@ $isemptyUsername = empty($_POST['username']);
 $isemptyEmail = empty($_POST['email']);
 $isemptyPassword = empty($_POST['password']);
 $isemptyCheckbox = empty($_POST['checkbox']);
+$issetEmail = isset($_POST['email']);
 $issetVar = isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['checkbox']);
 $filterUsername = isset($_POST['username']) ? filter_var($_POST['username'], FILTER_SANITIZE_STRING) : null;
 $filterEmail = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) : null;

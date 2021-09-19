@@ -1,5 +1,5 @@
 RewriteEngine On
-php_flag display_startup_errors off
-php_flag display_errors off
+#php_flag display_startup_errors off
+#php_flag display_errors off
 RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js)$
 RewriteRule (.*) public/index.php [QSA,L]

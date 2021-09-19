@@ -1,4 +1,4 @@
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+<body style="height: 100% !important;" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -64,8 +64,8 @@
         </div>
     </div>
 </section>
-<footer class="text-center footer">
-    <div class="container">
+<footer style="bottom: 0;width: 100%;" class="text-center footer">
+    <div style="padding-bottom: 5%" class="container ">
         <div class="row">
             <div class="col">
                 <h4 class="text-uppercase">github</h4><a
@@ -75,25 +75,20 @@
             </div>
         </div>
     </div>
-</footer>
-<div class="text-center text-white copyright py-4">
-    <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
-    <div style="font-size: 10px; padding: 2%" class="container"><small>Vos données personnelles sont conservées pour une
+
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright © Tristan RICHARD 2021</small></div>
+        <div style="font-size: 10px; padding: 2%" class="container">Vos données personnelles sont conservées pour une
             durée maximale de 3 ans. En application de la loi Informatique et Libertés du 6 janvier 1978 modifiée par la
             loi du 9 août 2004 et du Règlement Général sur la Protection des Données, entrée en vigueur le 25 mai 2018,
             vous disposez d’un droit d’accès, de rectification, de modification et de suppression concernant les données
-            qui vous concernent. Vous pouvez contacter le responsable pour exercer ce droit : [adresse e-mail du
-            responsable des données]. Nous mettons tout en oeuvre pour protéger vos données personnelles et empêcher
+            qui vous concernent. Vous pouvez contacter le responsable pour exercer ce droit : richard.tristan.93@gmail.com. Nous mettons tout en oeuvre pour protéger vos données personnelles et empêcher
             leur diffusion. Néanmoins, si un piratage venait à entraîner une fuite de données, le responsable des
             données s’engage à prévenir toutes personnes victime d’une violation de ses données à caractère personnel.
             Parallèlement, une notification documentée de cette violation sera également adressée à la CNIL dans un
             délai maximum de 72 heures après sa découverte.</div>
-    </small>
-</div>
-<div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white"
-                                                               href="#page-top"><i class="fa fa-chevron-up"></i></a>
-</div>
-
+    </div>
+</footer>
 <script src="/../../public/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/../../public/assets/js/freelancer.js"></script>
 <script src="/../../public/assets/js/main.js"></script>
