@@ -7,7 +7,7 @@ session_start();
 use App\model\Connect;
 
 
-$connection = new Connect('???', '???', '???', '???');
+$connection = new Connect('localhost', 'pkm', 'root', '');
 $db = $connection->getPdo();
 
 
@@ -29,8 +29,7 @@ post('/lucky', "/../src/controller/luckyController.php");
 get('/pokedex', "/../src/controller/pokemonListController.php");
 get('/logout', "/../src/controller/logoutController.php");
 get('/ladder', "/../src/controller/ladderController.php");
-
-
+get('/confirm/cle/$cle/id/$id', "/../src/controller/confirmController.php");
 
 
 

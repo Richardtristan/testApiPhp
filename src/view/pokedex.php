@@ -32,6 +32,8 @@
                 $pokemon = $list->callApi();
                 $story->pokemonSpecies($data);
                 $stories = $story->callApi();
+                $myPkmDouble = explode(',',$decode[0]);
+                $listDouble = array_count_values($myPkmDouble);
 
                 $phrase = preg_replace('/\f/', ' ', $stories->flavor_text_entries[0]->flavor_text);
 
@@ -47,7 +49,7 @@
                              src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image pokemon"
                              data-shiny="<?php echo $pokemon->sprites->front_shiny ?>"
                              data-default="<?php echo $pokemon->sprites->front_default ?>"/>
-                        <?php if ($listDouble[$data]){?>
+                        <?php if ($listDouble != []){?>
                             <div style="margin-left: auto; margin-right: auto; padding-top: 5%" class=" nameHovercard-text col-6 text-center text-white"><?php echo $listDouble[$data];?> time(s) catch</div>
                        <?php }?>
                         <div data-name="<?php echo strtoupper($pokemon->name) ?>" data-story="<?php echo $phrase; ?>"

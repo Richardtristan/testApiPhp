@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit0e779773c2113d7d4de31dba5dcd8397
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'A' => 
         array (
             'Awps\\' => 5,
@@ -15,6 +19,10 @@ class ComposerStaticInit0e779773c2113d7d4de31dba5dcd8397
     );
 
     public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Awps\\' => 
         array (
             0 => __DIR__ . '/..' . '/awps/font-awesome-php/src',
