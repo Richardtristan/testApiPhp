@@ -35,7 +35,7 @@ if ($issetVar) {
             $mail->Host = 'smtp.gmail.com';
             $mail->Port = 465;
         $mail->Username = 'richard.tristan.93@gmail.com';
-        $mail->Password = 'Rich@rd1809';
+        $mail->Password = '??';
 
    //   $path = 'reseller.pdf';
    //   $mail->AddAttachment($path);
