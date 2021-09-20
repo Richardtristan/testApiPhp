@@ -1,7 +1,5 @@
 <?php
-if (!isset($_SESSION['idUser'])) {
-    header('location: /login');
-}
+
 
 use App\helper\Ladder;
 

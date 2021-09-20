@@ -15,7 +15,7 @@
     </div>
 </nav>
 <section id="login"
-         style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
+         style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;padding-top: 15%; padding-bottom: 15%">
     <h2 class="text-uppercase text-center text-white pt-3" style="padding: 0px;margin: 40px;">Login</h2>
     <div class="container">
         <div class="row">

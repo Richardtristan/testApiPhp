@@ -16,9 +16,8 @@
     </div>
 </nav>
 <section id="register"
-         style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;">
-    <h2 class="text-uppercase text-center text-white mb-0" style="padding: 0px;margin: 40px;"><br><strong>CREATE AN
-            ACCOUNT.</strong><br><br></h2>
+         style="width: 100%;height: auto;background: url(/../../public/assets/img/pikachu.jpg) center / cover no-repeat;padding-top: 10%; padding-bottom: 10%">
+    <h1 class="text-uppercase text-center text-white mb-0" style="padding: 0px;margin: 40px;"><br><strong>CREATE AN ACCOUNT.</strong><br><br></h1>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -29,7 +28,6 @@
                             <section class="register-photo" style="background: rgba(241,247,252,0);">
                                 <div class="form-container">
 
-                                    <h2 class="text-center text-secondary text-uppercase"></h2>
                                     <div class="mb-3"><input class="form-control" type="text" name="username"
                                                              value="<?php $isemptyUsername ?>" placeholder="Username"
                                                              style="background: rgb(255,236,236);"></div>

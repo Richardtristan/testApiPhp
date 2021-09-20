@@ -1,29 +1,43 @@
 <body style="height: 100% !important;" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
-        <a class="nav-link py-3 px-0 px-lg-3 btn-sm rounded bg-danger text-white" href="/logout"
-           style="padding: 1% !important;">Logout</a>
+        <?php if (!isset($_SESSION['idUser'])) {?>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
                     class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                                     href="/ladder">Ladder</a></li>
-                <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
-                <li class="nav-item"></li>
-                <li class="nav-item mx-0 mx-lg-1"></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pokedex">My
-                        pokedex</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/login">Log in</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/register">Register</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/ladder">Ladder</a></li>
             </ul>
         </div>
+        <?php } ?>
+        <?php if (isset($_SESSION['idUser'])) {?>
+            <a class="nav-link py-3 px-0 px-lg-3 btn-sm rounded bg-danger text-white" href="/logout"
+               style="padding: 1% !important;">Logout</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+                        class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/ladder">Ladder</a></li>
+                    <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pokedex">My
+                            pokedex</a></li>
+                </ul>
+            </div>
+        <?php } ?>
     </div>
 </nav>
 
 <section id="ladder" style=" background-color: #FE5858">
 
-        <h2 class="text-uppercase text-center text-white mb-0" style="padding: 0;"><br><strong>The best
+        <h2 class="text-uppercase text-center text-white mb-0" style="padding-top: 3%;"><br><strong>The best
                 trainers</strong><br><br></h2>
     <div class="container" style=" min-height:auto;!important;">
         <div class="container" style="padding-top: 15%; padding-bottom: 15%">
