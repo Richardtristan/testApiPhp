@@ -11,6 +11,7 @@ use App\model\PokeApi;
 $pokedex = new Pokedex($_SESSION['idUser']);
 
 $decode = $pokedex->getPokemons();
+
 if ($decode != "" ){
     $myPkmDouble = explode(',',$decode[0]);
     $listDouble = array_count_values($myPkmDouble);

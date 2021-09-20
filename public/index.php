@@ -28,6 +28,7 @@ get('/lucky', "/../src/controller/luckyController.php");
 post('/lucky', "/../src/controller/luckyController.php");
 get('/pokedex', "/../src/controller/pokemonListController.php");
 get('/logout', "/../src/controller/logoutController.php");
+get('/ladder', "/../src/controller/ladderController.php");
 
 
 

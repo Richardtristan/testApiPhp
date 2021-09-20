@@ -9,8 +9,7 @@
                     class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/login">home</a>
-                </li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/ladder">Ladder</a></li>
                 <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
                 <li class="nav-item"></li>
                 <li class="nav-item mx-0 mx-lg-1"></li>
@@ -26,13 +25,7 @@
     <div class="container" style="padding-top: 5%">
 
         <?php
-
-        echo "<pre>";
-        var_dump($listDouble[1]);
-        echo "</pre>";
-
-        if ($myPokemons != []) {
-            ?>
+        if ($myPokemons != []) {?>
             <div class="row g-2 mx-auto p-12 w-100" style="width: 100%">
             <?php foreach ($myPokemons as $data) {
                 $list->pokemon($data);
@@ -50,14 +43,17 @@
                         Number: <?php echo $pokemon->id ?></div>
                     <div class="row card-<?php echo $pokemon->id ?>">
                         <img id="img-<?php echo $pokemon->id ?>"  style="margin-left: auto; margin-right: auto; width: auto ; height: 50%"
-                             class="imgHover card-text col-6 card-<?php echo $pokemon->id ?>"
+                             class="imgHover card-text col-1 card-<?php echo $pokemon->id ?>"
                              src="<?php echo $pokemon->sprites->front_default ?>" alt="Card image pokemon"
                              data-shiny="<?php echo $pokemon->sprites->front_shiny ?>"
                              data-default="<?php echo $pokemon->sprites->front_default ?>"/>
+                        <?php if ($listDouble[$data]){?>
+                            <div style="margin-left: auto; margin-right: auto; padding-top: 5%" class=" nameHovercard-text col-6 text-center text-white"><?php echo $listDouble[$data];?> time(s) catch</div>
+                       <?php }?>
                         <div data-name="<?php echo strtoupper($pokemon->name) ?>" data-story="<?php echo $phrase; ?>"
                              id="pokemonName-<?php echo $pokemon->id ?>"
                              class="nameHover card-text col-6 text-white card-<?php echo $pokemon->id ?>"
-                             style="margin-left: auto; margin-right: auto;padding-left: 0; padding-top: 20%"><?php echo strtoupper($pokemon->name) ?></div>
+                             style="margin-left: auto; margin-right: auto;padding-left: 0"><?php echo strtoupper($pokemon->name) ?></div>
                     </div>
                     <div class=" row justify-content-around card-<?php echo $pokemon->id ?>">
                         <?php foreach ($pokemon->types as $type) { ?>

@@ -37,4 +37,10 @@ class Pokedex{
         $date = $this->db->prepare("UPDATE pokedex set date=? WHERE userId = ?");
         $date->execute([$dateNow, $this->id]);
     }
+    function ladderPokedex()
+    {
+        $ladder = $this->db->prepare("SELECT username,pokemons FROM accounts INNER JOIN pokedex on pokedex.userId = accounts.id");
+        $ladder->execute();
+        return $ladder->fetchall();
+    }
 }

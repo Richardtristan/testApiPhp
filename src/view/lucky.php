@@ -1,16 +1,14 @@
 <body style="height: 100% !important;" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand" href="/login">phpapi</a>
-        <a class="nav-link py-3 px-0 px-lg-3 btn-sm rounded bg-danger text-white" href="/logout"
-           style="padding: 1% !important;">Logout</a>
+        <a class="nav-link py-3 px-0 px-lg-3 btn-sm rounded bg-danger text-white" href="/logout" style="padding: 1% !important;">Logout</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
                     class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/login">home</a>
-                </li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/ladder">Ladder</a></li>
                 <li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/lucky">Lucky chest</a></li>
                 <li class="nav-item"></li>
                 <li class="nav-item mx-0 mx-lg-1"></li>
