@@ -22,11 +22,11 @@ class Login
 
     public function login()
     {
-        $log = $this->db->prepare("SELECT username, password FROM accounts WHERE username = ?");
+        $log = $this->db->prepare("SELECT username, password, confirm FROM accounts WHERE username = ?");
         $log->execute([$this->username]);
         $userExist = $log->fetch();
 
-        if ($userExist) {
+        if ($userExist && $userExist['confirm'] === "1") {
             if ($userExist['username'] == $this->username && password_verify($this->password, $userExist["password"]))
                 return true;
         }

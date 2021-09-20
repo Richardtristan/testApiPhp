@@ -1,13 +1,13 @@
 <?php
 require_once('../vendor/autoload.php');
 require_once("router.php");
-require __DIR__. '/../src/view/header.php';
 session_start();
+require __DIR__. '/../src/view/header.php';
+
 
 use App\model\Connect;
-
-
-$connection = new Connect('localhost', 'pkm', 'root', '');
+$configs = include('config.php');
+$connection = new Connect($configs->host, $configs->database, $configs->username, $configs->pass);
 $db = $connection->getPdo();
 
 

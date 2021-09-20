@@ -29,7 +29,7 @@
                                 <div class="form-container">
 
                                     <div class="mb-3"><input class="form-control" type="text" name="username"
-                                                             value="<?php $isemptyUsername ?>" placeholder="Username"
+                                                             value="<?php echo $filterUsername ?>" placeholder="Username"
                                                              style="background: rgb(255,236,236);"></div>
                                     <?php
                                     if ($user != null && $user->UsernameExist()) {
@@ -40,7 +40,7 @@
                                         echo "<p>This value is needed</p>";
                                     }
                                     ?>
-                                    <div class="mb-3"><input class="form-control" value="<?php $isemptyEmail ?>"
+                                    <div class="mb-3"><input class="form-control" value="<?php echo $filterEmail ?>"
                                                              type="email" name="email" placeholder="Email"
                                                              style="background: rgb(255,236,236);"></div>
                                     <?php

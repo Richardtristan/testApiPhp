@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="" />
+    <list default="true" id="dd1e40d9-2fe9-4b7a-9780-bbf2c8d51bce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/confirmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/confirmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/loginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/registerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/registerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +61,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/mtgsdk/mtgsdk" />
       <path value="$PROJECT_DIR$/vendor/awps/font-awesome-php" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wzD8ILmzTD1QsfBRfyAe6xAfwa" />
@@ -60,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,11 +96,11 @@
       <recent name="C:\Users\tristan\git\testApiPhp\src\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\src\model" />
       <recent name="C:\git\testApiPhp" />
       <recent name="C:\Users\tristan\git\testApiPhp\public\assets\img" />
       <recent name="C:\Users\tristan\git\testApiPhp\public\assets" />
       <recent name="C:\Users\tristan\git\testApiPhp\public" />
-      <recent name="C:\Users\tristan\git\testApiPhp\public\css" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.SetTest.test_all_returns_all_sets">
@@ -139,6 +157,9 @@
       <workItem from="1631951558053" duration="3554000" />
       <workItem from="1631976288547" duration="2329000" />
       <workItem from="1632062881511" duration="7694000" />
+      <workItem from="1632163335176" duration="6586000" />
+      <workItem from="1632170008301" duration="296000" />
+      <workItem from="1632170576996" duration="311000" />
     </task>
     <servers />
   </component>

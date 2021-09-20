@@ -3,9 +3,10 @@
 if (isset($_SESSION['idUser'])) {
     header('Location: /pokedex');
 }
-
+use App\model\User;
 use PHPMailer\PHPMailer\PHPMailer;
-use App\helper\User;
+
+$configs = require  __DIR__.'/../../public/config.php';
 $cle = rand(1000000,9000000);
 $isemptyUsername = empty($_POST['username']);
 $isemptyEmail = empty($_POST['email']);
@@ -18,7 +19,7 @@ $filterEmail = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALID
 $filterPassword = isset($_POST['password']) ? filter_var($_POST['password'], FILTER_SANITIZE_STRING) : null;
 
 if ($issetVar && !$isemptyUsername && $filterEmail && $filterPassword && $filterUsername) {
-    $user = new User(trim($filterUsername), trim($filterEmail), password_hash(trim($filterPassword),PASSWORD_BCRYPT));
+    $user = new User(trim($filterUsername), trim($filterEmail), password_hash($filterPassword, PASSWORD_BCRYPT));
 }else $user = null;
 require __DIR__ . '/../view/register.php';
 if ($issetVar) {
@@ -34,20 +35,20 @@ if ($issetVar) {
             $mail->SMTPSecure = 'ssl';
             $mail->Host = 'smtp.gmail.com';
             $mail->Port = 465;
-        $mail->Username = 'richard.tristan.93@gmail.com';
-        $mail->Password = '??';
+            $mail->Username = $configs->mailUser;
+            $mail->Password = $configs->mailPass;
 
    //   $path = 'reseller.pdf';
    //   $mail->AddAttachment($path);
 
-        $mail->IsHTML(true);
-        $mail->From="richard.tristan.93@gmail.com";
-        $mail->FromName=$from_name;
-        $mail->Sender=$from;
-        $mail->AddReplyTo($from, $from_name);
-        $mail->Subject = $subject;
-        $mail->Body = $body;
-        $mail->AddAddress($to);
+            $mail->IsHTML(true);
+            $mail->From= $configs->mailUser;
+            $mail->FromName=$from_name;
+            $mail->Sender=$from;
+            $mail->AddReplyTo($from, $from_name);
+            $mail->Subject = $subject;
+            $mail->Body = $body;
+            $mail->AddAddress($to);
         if(!$mail->Send())
         {
             $error ="Please try Later, Error Occured while Processing...";
@@ -63,8 +64,8 @@ if ($issetVar) {
         $to   = $filterEmail;
         $from = "richard.tristan.93@gmail.com";
         $name = 'PhpApi';
-        $subj = "http://http://185.142.53.158/confirm/cle/$cle/id/45";
-        $msg = 'This is mail about testing mailing using PHP.';
+        $subj = "link for confirm account";
+        $msg = "http://localhost/confirm/cle/$cle/id/{$_SESSION['id']}";
 
         $error=smtpmailer($to,$from, $name ,$subj, $msg);
     }

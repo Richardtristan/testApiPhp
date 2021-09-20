@@ -8,6 +8,6 @@ $getVerif = $verif->getVerify();
 
 if ($getVerif["confirm"] === "0") {
      $verif->setVerify();
+     $_SESSION['confirm'] = 'ok';
      header('location: /login');
 }
-var_dump($getVerif["confirm"]);

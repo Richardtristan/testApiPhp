@@ -23,7 +23,7 @@
                 <section>
                     <form method="post">
                         <h2 class="visually-hidden">Login Form</h2>
-                        <div class="mb-3"><input value="<?php $isemptyUsername ?>" class="form-control" type="text"
+                        <div class="mb-3"><input value="<?php echo $filterUsername ?>" class="form-control" type="text"
                                                  name="username" placeholder="username"
                                                  style="background: rgb(255,236,236);"></div>
 
@@ -36,7 +36,29 @@
                             <a class=" pt-2 not-already" href="/register">You don't have an account? Create here.</a>
                         </div>
                     </form>
-                    <?php if (isset($login)) {
+                    <?php
+                    if ($_SESSION['confirm'] === 'ok'){
+                        echo '<div id="modalLogin" style="display: block" class="myModal modal is-valid" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Valitdation</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Thanks for the validation</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <a  class="btn btn-primary" href="/login">Log In</a>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>';
+                        session_unset();
+                        session_destroy();
+                    }
+                    if (isset($login)) {
                         if (!$login->login()) {
                             echo '<div id="modalLogin" style="display: block" class="myModal modal is-valid" tabindex="-1">
                                             <div class="modal-dialog">
@@ -46,7 +68,7 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p>Bad password or username</p>
+                                                        <p>Bad password or username or account not confirmed in email</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                     <a  class="btn btn-primary" href="/login">Log In</a>
