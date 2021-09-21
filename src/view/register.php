@@ -25,9 +25,7 @@
                     <div class="control-group"></div>
                     <div class="control-group">
                         <div class="mb-0 form-floating controls pb-2">
-                            <section class="register-photo" style="background: rgba(241,247,252,0);">
-                                <div class="form-container">
-
+                                <div class="form-container" style="background: rgba(241,247,252,0);">
                                     <div class="mb-3"><input class="form-control" type="text" name="username"
                                                              value="<?php echo $filterUsername ?>" placeholder="Username"
                                                              style="background: rgb(255,236,236);"></div>
@@ -100,7 +98,6 @@
 
                                     ?>
                                 </div>
-                            </section>
                         </div>
                     </div>
                     <div class="control-group"></div>
