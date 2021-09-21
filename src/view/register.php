@@ -31,8 +31,8 @@
                                     <div class="mb-3"><input class="form-control" type="text" name="username"
                                                              value="<?php echo $filterUsername ?>" placeholder="Username"
                                                              style="background: rgb(255,236,236);"></div>
-                                    <?php
-                                    if ($user != null && $user->UsernameExist()) {
+
+                                    <?php if ($user != null && $user->UsernameExist()) {
                                         echo '<p>This username exist</p>';
                                     }
 
@@ -77,7 +77,7 @@
                                     </div>
                                     <a class="already" href="/login">You already have an account? Login here.</a>
                                     <?php
-                                    if ($user != null && !$user->emailExist() && !$user->UsernameExist()) {
+                                    if ($user != null && !$user->emailExist() && !$user->UsernameExist() && !empty($_SESSION['mailer'])) {
                                         echo '<div style="display: block" class="myModal modal is-valid" tabindex="-1">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -88,6 +88,7 @@
                                                     <div class="modal-body">
                                                         <p>You have registered</p>
                                                     </div>
+                                                    <div class="modal-body">An email has been sent to activate your account</div>
                                                     <div class="modal-footer">
                                                     <a  class="btn btn-primary" href="/login">Log In</a>
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

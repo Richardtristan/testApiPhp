@@ -30,6 +30,7 @@ get('/pokedex', "/../src/controller/pokemonListController.php");
 get('/logout', "/../src/controller/logoutController.php");
 get('/ladder', "/../src/controller/ladderController.php");
 get('/confirm/cle/$cle/id/$id', "/../src/controller/confirmController.php");
+get('/404', "/../src/view/404.php");
 
 
 

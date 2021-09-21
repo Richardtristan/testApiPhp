@@ -37,7 +37,8 @@
                         </div>
                     </form>
                     <?php
-                    if ($_SESSION['confirm'] === 'ok'){
+                    if (isset($_SESSION['confirm'])){
+                        if ($_SESSION['confirm'] === 'ok'){
                         echo '<div id="modalLogin" style="display: block" class="myModal modal is-valid" tabindex="-1">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -57,6 +58,7 @@
                                         </div>';
                         session_unset();
                         session_destroy();
+                        }
                     }
                     if (isset($login)) {
                         if (!$login->login()) {
