@@ -75,7 +75,7 @@
                                     </div>
                                     <a class="already" href="/login">You already have an account? Login here.</a>
                                     <?php
-                                    if ($user != null && !$user->emailExist() && !$user->UsernameExist() ) {
+                                    if ($user != null && !$user->emailExist() && !$user->UsernameExist() && $_SESSION['mailer'] !== "" ) {
                                         echo '<div style="display: block" class="myModal modal is-valid" tabindex="-1">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
