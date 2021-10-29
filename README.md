@@ -32,3 +32,19 @@
 *Html
 *Javascipt
 *Using a text editor
+
+# how to install
+Create an config.php in public folder 
+with this in :
+<?php
+
+return (object) array(
+    'host' => 'localhost',
+    'username' => 'user',
+    'pass' => 'pass',
+    'database' => 'dbname',
+    'mailUser' => 'mail',
+    'mailPass' => 'mailpass'
+
+);
+
