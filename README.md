@@ -36,9 +36,8 @@
 # how to install
 Create an config.php in public folder 
 with this in :
-<?php
 
-return (object) array(
+ return (object) array(
     'host' => 'localhost',
     'username' => 'user',
     'pass' => 'pass',
